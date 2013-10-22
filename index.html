@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<title>chapu's cube</title>
+<style>
+body {
+background-color: black;
+color: white;
+}
+#gameCanvas {
+background-color: black;
+width: 640px;
+height: 360px;
+margin: auto;
+float: left;
+}
+#scoreboard {
+font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+color: white;
+text-align: center;
+}
+#title {
+text-align: center;
+font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+background-color: white;
+color: black;
+}
+#movesLeft {
+width:100px;
+height: 360px;
+float:left;
+text-align:left;
+}
+#movesRight {
+width:50px;
+height: 360px;
+float:left;
+text-align:right;
+}
+#aligned {
+width:130px;
+height: 360px;
+float:left;
+text-align:right;
+}
+#locked {
+width:130px;
+height: 360px;
+float:left;
+text-align:right;
+}
+#bottom {
+float:left;
+text-align:center;
+width: 100%;
+}
+</style>
+
+
+</head>
+
+    <body onload='setup();'>
+
+        <div id='gameCanvas'></div>
+        <script src='./Scripts/three.min.js'></script>
+        <script src='./Scripts/keyboard.js'></script>
+        <script src='./Scripts/game.js'></script>
+
+        <div id='scoreboard'>
+        <div>
+        <div id="movesLeft">
+        <h3>U - up</h3>
+        <h3>D - down</h3>
+        <h3>R - right</h3>
+        <h3>L - left</h3>
+        <h3>F - front</h3>
+        <h3>B - back</h3>
+        </div>
+        <div id="movesRight">
+        <h3 id='UTurn'>0&deg;</h3>
+        <h3 id='DTurn'>0&deg;</h3>
+        <h3 id='RTurn'>0&deg;</h3>
+        <h3 id='LTurn'>0&deg;</h3>
+        <h3 id='FTurn'>0&deg;</h3>
+        <h3 id='BTurn'>0&deg;</h3>
+        </div>
+        <div id="aligned">
+        <h3 id='UAlign'>aligned</h3>
+        <h3 id='DAlign'>aligned</h3>
+        <h3 id='RAlign'>aligned</h3>
+        <h3 id='LAlign'>aligned</h3>
+        <h3 id='FAlign'>aligned</h3>
+        <h3 id='BAlign'>aligned</h3>
+        </div>
+        <div id="locked">
+        <h3 id='ULock'>not locked</h3>
+        <h3 id='DLock'>not locked</h3>
+        <h3 id='RLock'>not locked</h3>
+        <h3 id='LLock'>not locked</h3>
+        <h3 id='FLock'>not locked</h3>
+        <h3 id='BLock'>not locked</h3>
+        </div>
+        <h4 style='width:100%;'>space: reverse move<br><br>
+        arrows: move camera</h4>
+        </div>
+        <br>
+
+        </div>
+        <div id='bottom'>
+        <h1 id='title'>chapu's cube</h1>
+        </div>
+
+        </body>
+        </html>
