@@ -1,41 +1,114 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>cube by chapulina</title>
+<head>
+<title>chapu's cube</title>
+<style>
+body {
+background-color: black;
+color: white;
+}
+#gameCanvas {
+background-color: black;
+width: 640px;
+height: 360px;
+margin: auto;
+float: left;
+}
+#scoreboard {
+font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+color: white;
+text-align: center;
+}
+#title {
+text-align: center;
+font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+background-color: white;
+color: black;
+}
+#movesLeft {
+width:100px;
+height: 360px;
+float:left;
+text-align:left;
+}
+#movesRight {
+width:50px;
+height: 360px;
+float:left;
+text-align:right;
+}
+#aligned {
+width:130px;
+height: 360px;
+float:left;
+text-align:right;
+}
+#locked {
+width:130px;
+height: 360px;
+float:left;
+text-align:right;
+}
+#bottom {
+float:left;
+text-align:center;
+width: 100%;
+}
+</style>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>cube</h1>
-        <p>chapu's cube</p>
 
-        <p class="view"><a href="https://github.com/chapulina/cube">View the Project on GitHub <small>chapulina/cube</small></a></p>
+</head>
 
+    <body onload='setup();'>
 
-        <ul>
-          <li><a href="https://github.com/chapulina/cube/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/chapulina/cube/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/chapulina/cube">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p>cube cube </p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/chapulina">chapulina</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+        <div id='gameCanvas'></div>
+        <script src='./Scripts/three.min.js'></script>
+        <script src='./Scripts/keyboard.js'></script>
+        <script src='./Scripts/game.js'></script>
+
+        <div id='scoreboard'>
+        <div>
+        <div id="movesLeft">
+        <h3>U - up</h3>
+        <h3>D - down</h3>
+        <h3>R - right</h3>
+        <h3>L - left</h3>
+        <h3>F - front</h3>
+        <h3>B - back</h3>
+        </div>
+        <div id="movesRight">
+        <h3 id='UTurn'>0&deg;</h3>
+        <h3 id='DTurn'>0&deg;</h3>
+        <h3 id='RTurn'>0&deg;</h3>
+        <h3 id='LTurn'>0&deg;</h3>
+        <h3 id='FTurn'>0&deg;</h3>
+        <h3 id='BTurn'>0&deg;</h3>
+        </div>
+        <div id="aligned">
+        <h3 id='UAlign'>aligned</h3>
+        <h3 id='DAlign'>aligned</h3>
+        <h3 id='RAlign'>aligned</h3>
+        <h3 id='LAlign'>aligned</h3>
+        <h3 id='FAlign'>aligned</h3>
+        <h3 id='BAlign'>aligned</h3>
+        </div>
+        <div id="locked">
+        <h3 id='ULock'>not locked</h3>
+        <h3 id='DLock'>not locked</h3>
+        <h3 id='RLock'>not locked</h3>
+        <h3 id='LLock'>not locked</h3>
+        <h3 id='FLock'>not locked</h3>
+        <h3 id='BLock'>not locked</h3>
+        </div>
+        <h4 style='width:100%;'>space: reverse move<br><br>
+        arrows: move camera</h4>
+        </div>
+        <br>
+
+        </div>
+        <div id='bottom'>
+        <h1 id='title'>chapu's cube</h1>
+        </div>
+
+        </body>
+        </html>
