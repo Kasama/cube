@@ -255,6 +255,7 @@ function createScene()
     // W
     var WMaterial = makeMaterial([1,0,0,0,0,0]);
     W = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WMaterial);
+	W.color = "W";
     scene.add(W);
     W.receiveShadow = true;
     W.castShadow = true;
@@ -263,6 +264,7 @@ function createScene()
     // B
     var BMaterial = makeMaterial([0,1,0,0,0,0]);
     B = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BMaterial);
+	B.color = "B";
     scene.add(B);
     B.receiveShadow = true;
     B.castShadow = true;
@@ -271,6 +273,7 @@ function createScene()
     // G
     var GMaterial = makeMaterial([0,0,1,0,0,0]);
     G = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),GMaterial);
+	G.color = "G";
     scene.add(G);
     G.receiveShadow = true;
     G.castShadow = true;
@@ -279,6 +282,7 @@ function createScene()
     // Y
     var YMaterial = makeMaterial([0,0,0,1,0,0]);
     Y = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),YMaterial);
+	Y.color = "Y";
     scene.add(Y);
     Y.receiveShadow = true;
     Y.castShadow = true;
@@ -287,6 +291,7 @@ function createScene()
     // R
     var RMaterial = makeMaterial([0,0,0,0,1,0]);
     R = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),RMaterial);
+	R.color = "R";
     scene.add(R);
     R.receiveShadow = true;
     R.castShadow = true;
@@ -295,6 +300,7 @@ function createScene()
     // O
     var OMaterial = makeMaterial([0,0,0,0,0,1]);
     O = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),OMaterial);
+	O.color = "O";
     scene.add(O);
     O.receiveShadow = true;
     O.castShadow = true;
@@ -305,6 +311,7 @@ function createScene()
     // WG
     var WGMaterial = makeMaterial([1,0,1,0,0,0]);
     WG = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WGMaterial);
+	WG.color = "WG";
     scene.add(WG);
     WG.receiveShadow = true;
     WG.castShadow = true;
@@ -314,6 +321,7 @@ function createScene()
     // WY
     var WYMaterial = makeMaterial([1,0,0,1,0,0]);
     WY = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WYMaterial);
+	WY.color = "WY";
     scene.add(WY);
     WY.receiveShadow = true;
     WY.castShadow = true;
@@ -323,6 +331,7 @@ function createScene()
     // WR
     var WRMaterial = makeMaterial([1,0,0,0,1,0]);
     WR = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WRMaterial);
+	WR.color = "WR";
     scene.add(WR);
     WR.receiveShadow = true;
     WR.castShadow = true;
@@ -332,6 +341,7 @@ function createScene()
     // WO
     var WOMaterial = makeMaterial([1,0,0,0,0,1]);
     WO = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WOMaterial);
+	WO.color = "WO";
     scene.add(WO);
     WO.receiveShadow = true;
     WO.castShadow = true;
@@ -341,6 +351,7 @@ function createScene()
     // BG
     var BGMaterial = makeMaterial([0,1,1,0,0,0]);
     BG = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BGMaterial);
+	BG.color = "BG";
     scene.add(BG);
     BG.receiveShadow = true;
     BG.castShadow = true;
@@ -350,6 +361,7 @@ function createScene()
     // BY
     var BYMaterial = makeMaterial([0,1,0,1,0,0]);
     BY = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BYMaterial);
+	BY.color = "BY";
     scene.add(BY);
     BY.receiveShadow = true;
     BY.castShadow = true;
@@ -359,6 +371,7 @@ function createScene()
     // BR
     var BRMaterial = makeMaterial([0,1,0,0,1,0]);
     BR = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BRMaterial);
+	BR.color = "BR";
     scene.add(BR);
     BR.receiveShadow = true;
     BR.castShadow = true;
@@ -368,6 +381,7 @@ function createScene()
     // BO
     var BOMaterial = makeMaterial([0,1,0,0,0,1]);
     BO = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BOMaterial);
+	BO.color = "BO";
     scene.add(BO);
     BO.receiveShadow = true;
     BO.castShadow = true;
@@ -377,6 +391,7 @@ function createScene()
     // GR
     var GRMaterial = makeMaterial([0,0,1,0,1,0]);
     GR = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),GRMaterial);
+	GR.color = "GR";
     scene.add(GR);
     GR.receiveShadow = true;
     GR.castShadow = true;
@@ -387,6 +402,7 @@ function createScene()
     // GO
     var GOMaterial = makeMaterial([0,0,1,0,0,1]);
     GO = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),GOMaterial);
+	GO.color = "GO";
     scene.add(GO);
     GO.receiveShadow = true;
     GO.castShadow = true;
@@ -396,6 +412,7 @@ function createScene()
     // YR
     var YRMaterial = makeMaterial([0,0,0,1,1,0]);
     YR = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),YRMaterial);
+	YR.color = "YR";
     scene.add(YR);
     YR.receiveShadow = true;
     YR.castShadow = true;
@@ -405,6 +422,7 @@ function createScene()
     // YO
     var YOMaterial = makeMaterial([0,0,0,1,0,1]);
     YO = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),YOMaterial);
+	YO.color = "YO";
     scene.add(YO);
     YO.receiveShadow = true;
     YO.castShadow = true;
@@ -416,6 +434,7 @@ function createScene()
     // WGR
     var WGRMaterial = makeMaterial([1,0,1,0,1,0]);
     WGR = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WGRMaterial);
+	WGR.color = "WGR";
     scene.add(WGR);
     WGR.receiveShadow = true;
     WGR.castShadow = true;
@@ -426,6 +445,7 @@ function createScene()
     // WGO
     var WGOMaterial = makeMaterial([1,0,1,0,0,1]);
     WGO = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WGOMaterial);
+	WGO.color = "WGO";
     scene.add(WGO);
     WGO.receiveShadow = true;
     WGO.castShadow = true;
@@ -436,6 +456,7 @@ function createScene()
     // WYR
     var WYRMaterial = makeMaterial([1,0,0,1,1,0]);
     WYR = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WYRMaterial);
+	WYR.color = "WYR";
     scene.add(WYR);
     WYR.receiveShadow = true;
     WYR.castShadow = true;
@@ -446,6 +467,7 @@ function createScene()
     // WYO
     var WYOMaterial = makeMaterial([1,0,0,1,0,1]);
     WYO = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),WYOMaterial);
+	WYO.color = "WYO";
     scene.add(WYO);
     WYO.receiveShadow = true;
     WYO.castShadow = true;
@@ -456,6 +478,7 @@ function createScene()
     // BGR
     var BGRMaterial = makeMaterial([0,1,1,0,1,0]);
     BGR = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BGRMaterial);
+	BGR.color = "BGR";
     BGR.receiveShadow = true;
     BGR.castShadow = true;
     BGR.position.x = -edgeRadius;
@@ -466,6 +489,7 @@ function createScene()
     // BGO
     var BGOMaterial = makeMaterial([0,1,1,0,0,1]);
     BGO = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BGOMaterial);
+	BGO.color = "BGO";
     scene.add(BGO);
     BGO.receiveShadow = true;
     BGO.castShadow = true;
@@ -476,6 +500,7 @@ function createScene()
     // BYR
     var BYRMaterial = makeMaterial([0,1,0,1,1,0]);
     BYR = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BYRMaterial);
+	BYR.color = "BYR";
     scene.add(BYR);
     BYR.receiveShadow = true;
     BYR.castShadow = true;
@@ -486,6 +511,7 @@ function createScene()
     // BYO
     var BYOMaterial = makeMaterial([0,1,0,1,0,1]);
     BYO = new THREE.Mesh(new THREE.CubeGeometry(cubieDimension,cubieDimension,cubieDimension,1,1,1),BYOMaterial);
+	BYO.color = "BYO";
     scene.add(BYO);
     BYO.receiveShadow = true;
     BYO.castShadow = true;
@@ -570,24 +596,26 @@ function playerCubeMovement()
 {
 
     // TURN FACES
+	
+	var clockwise = Key.isDown(Key.SPACE);
 
     // U turn
-    if (Key.isDown(Key.U)) turnFace(UFace,[R,UF,UR,UB,UL,UFR,UBR,UBL,UFL],[0,0,-1]);
+    if (Key.isDown(Key.U)) turnFaceStepped(UFace,[R,UF,UR,UB,UL,UFR,UBR,UBL,UFL],[0,0,-1], clockwise);
 
     // D turn
-    if (Key.isDown(Key.D)) turnFace(DFace,[O,DR,DF,DL,DB,DFR,DFL,DBL,DBR],[0,0,1]);
+    if (Key.isDown(Key.D)) turnFaceStepped(DFace,[O,DR,DF,DL,DB,DFR,DFL,DBL,DBR],[0,0,1], clockwise);
 
     // R turn
-    if (Key.isDown(Key.R)) turnFace(RFace,[Y,FR,DR,RB,UR,DFR,DBR,UBR,UFR],[0,1,0]);
+    if (Key.isDown(Key.R)) turnFaceStepped(RFace,[Y,FR,DR,RB,UR,DFR,DBR,UBR,UFR],[0,1,0], clockwise);
 
     // L turn
-    if (Key.isDown(Key.L)) turnFace(LFace,[G,DL,FL,UL,BL,DFL,UFL,UBL,DBL],[0,-1,0]);
+    if (Key.isDown(Key.L)) turnFaceStepped(LFace,[G,DL,FL,UL,BL,DFL,UFL,UBL,DBL],[0,-1,0], clockwise);
 
     // F turn
-    if (Key.isDown(Key.F)) turnFace(FFace,[B,DF,FR,UF,FL,DFR,UFR,UFL,DFL],[1,0,0]);
+    if (Key.isDown(Key.F)) turnFaceStepped(FFace,[B,DF,FR,UF,FL,DFR,UFR,UFL,DFL],[1,0,0], clockwise);
 
     // B turn
-    if (Key.isDown(Key.B)) turnFace(BFace,[W,RB,DB,BL,UB,DBR,DBL,UBL,UBR],[-1,0,0]);
+    if (Key.isDown(Key.B)) turnFaceStepped(BFace,[W,RB,DB,BL,UB,DBR,DBL,UBL,UBR],[-1,0,0], clockwise);
 
 
     // Lock / unlock faces
@@ -736,19 +764,58 @@ function playerCubeMovement()
 
 }
 
+function turnFace(thisFace, clockwise){
+
+	if (clockwise == null) clockwise = true;
+	var cubies = [];
+	var rotation = [];
+
+	switch(thisFace){
+		case UFace:
+			cubies = [R,UF,UR,UB,UL,UFR,UBR,UBL,UFL];
+			rotation = [0,0,-1];
+			break;
+		case DFace:
+			cubies = [O,DR,DF,DL,DB,DFR,DFL,DBL,DBR];
+			rotation = [0,0,1];
+			break;
+		case RFace:
+			cubies = [Y,FR,DR,RB,UR,DFR,DBR,UBR,UFR];
+			rotation = [0,1,0];
+			break;
+		case LFace:
+			cubies = [G,DL,FL,UL,BL,DFL,UFL,UBL,DBL];
+			rotation = [0,-1,0];
+			break;
+		case FFace:
+			cubies = [B,DF,FR,UF,FL,DFR,UFR,UFL,DFL];
+			rotation = [1,0,0];
+			break;
+		case BFace:
+			cubies = [W,RB,DB,BL,UB,DBR,DBL,UBL,UBR];
+			rotation = [-1,0,0];
+			break;
+	}
+
+	for (var i = 0; i < 18 ; i++) turnFaceStepped(thisFace, cubies, rotation, clockwise);
 
 
-function turnFace(thisFace,theseCubies,faceRot)
+}
+
+function turnFaceStepped(thisFace,theseCubies,faceRot, clockwise)
 {
+
+	if (clockwise == null) clockwise = true;
+
     // Only move if it isn't locked
     if(!thisFace.locked){
         thisFace.rotBefore = thisFace.rot;
         // Rotate
-        if (Key.isDown(Key.SPACE)){
-            thisFace.rotCalc -= cubieRotationSpeed;
+        if (clockwise){
+            thisFace.rotCalc += cubieRotationSpeed;
         }
         else{
-            thisFace.rotCalc += cubieRotationSpeed;
+            thisFace.rotCalc -= cubieRotationSpeed;
         }
         // Keep within one turn
         thisFace.rotCalc = thisFace.rotCalc % (Math.PI*2);
